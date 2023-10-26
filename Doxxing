@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include <chrono>
+#include <thread>
+#include <windows.h>
+#include <shellapi.h>
+
+int main()
+{
+    std::string option;
+    std::cout << "[1] Get Address & IP of a discord user\n[2] Get Email & IP of an instagram user\n\nEnter your option: ";
+    std::getline(std::cin, option);
+	int i = std::stoi(option);
+	std::string option1;
+	std::string option2;
+	std::system("cls");
+
+
+
+
+	switch(i)
+	{
+	case 1:
+		std::cout << "User id: ";
+
+		std::getline(std::cin, option1);
+		std::cout << "Fetching user details\n";
+
+		std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+		std::cout << "You got pranked lmao";
+		ShellExecute(0, 0, L"https://www.youtube.com/watch?v=dQw4w9WgXcQ", 0, 0, SW_SHOW);
+
+		while (true) {
+
+		}
+		break;
+	case 2:
+		std::cout << "Username: ";
+
+		std::getline(std::cin, option2);
+		std::cout << "Fetching user details\n";
+
+		std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+		std::cout << "You got pranked lmao";
+		ShellExecute(0, 0, L"https://www.youtube.com/watch?v=dQw4w9WgXcQ", 0, 0, SW_SHOW);
+
+		while (true) {
+
+		}
+		break;
+
+	}
+	
+
+
+	
+	}
+
+
+
